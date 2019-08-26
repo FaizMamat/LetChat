@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { UserlistComponent } from './userlist/userlist.component';
+import { ConversationComponent } from './conversation/conversation.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ChatdosComponent } from './chatdos/chatdos.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserlistComponent,
+    ConversationComponent,
+    ChatdosComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+<div class="left">
+    <p>Users</p>
+    <hr>
+    <div class= "userlist">
+    <div class = "users" *ngFor="let conversation of coversations; let i = index">
+            <div  (click)= "ChangeTheUserList(i)" >{{conversation.username}} ({{conversation.chat.length}})</div>
+    </div>
+    </div>
+</div>
+
+

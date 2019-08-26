@@ -1,0 +1,16 @@
+<div class="right">
+        <div class="messages">
+            <p>{{curruser}}</p>
+            <hr>
+            <p *ngFor="let chat of chats">
+                    {{chat}}
+            </p><br>
+        </div>
+        <div class="form" *ngIf="selectedIdx != null">
+                <input class = "formbox" type="text" [formControl]="newMessage" (keydown.enter) = "onSubmit()">
+        </div>
+        <div *ngIf="selectedIdx != null">
+                <p *ngFor="let errMessage of getErrorMessages()">{{errMessage}}</p>
+            </div>
+</div>
+        
